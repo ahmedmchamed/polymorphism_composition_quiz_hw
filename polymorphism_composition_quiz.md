@@ -2,7 +2,7 @@
 
 # Polymorphism
 
-**1. What does the ___word___ 'polymorphism' mean?*8
+**1. What does the ___word___ 'polymorphism' mean?**
 
 The ability for an object to take on multiple forms.
 
@@ -13,7 +13,7 @@ A derived class type can take the form of its base class type.
 ```java
 class Deer extends Animal implements IRun {}
 ```
-In this case, the derived class type `Deer` can take the form of its base class type `Animal`. If it does so however, it will only have the operations available in the Animal class.
+In this case, the derived class type `Deer` can take the form of its base class type `Animal`, or of the interface `IRun`. If it does so however, it will only have the operations available in the `Animal` class or `IRun` interface respectively.
 
 **3. What can we use to implement polymorphism in Java?**
 
@@ -23,11 +23,11 @@ We can use the operations available in a base class via an object of one of its 
 
 You can only perform single inheritance from another class in Java, but there can be an inheritance chain 
 where there are multiple single inheritances. Classes can implement multiple interfaces, however, and also
-take on the "form" of that interface type.
+take on the "form" of that interface type. In that sense, there can be multiple forms that an object can take.
 
 **5. Give an example of when you could use polymorphism.**
 
-In the use of an abstract class that multiple derived classes can inherit a set of common methods from.
+In the use of an abstract class that multiple derived classes can inherit a set of common methods and attributes/properties from.
 
 # Composition
 
@@ -53,10 +53,10 @@ class SmallHouse {
 
 **8. What is/are the advantage(s) of using composition?**
 
-* Makes the program structure easier to follow.
+* Makes the program structure and class implementations easier to follow.
 * Avoids confusion by limiting number of potential methods that would need to be overridden.
 
 **9. When an object is destroyed, what happens to all the objects it is composed of?**
 
 An object *owns* all of the other objects that form its composition.
-When an object is destroyed, all of object it is composed of are also destroyed as a result.
+When an object is destroyed, all of the objects it is composed of are also destroyed as a result.
